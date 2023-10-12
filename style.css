@@ -1,0 +1,245 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  width: auto;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+.formCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* -------  About  ------- */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about img {
+  width: 100%;
+  padding: 10px;
+}
+#aboutDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -------  Ideas  ------- */
+#ideas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#ideas h2 {
+  align-self: center;
+}
+
+#ideas img {
+  width: 100%;
+}
+.ideasCard {
+  width: 100%;
+}
+
+/* -------   Host  ------- */
+#host {
+  padding: 20px;
+}
+#host ul {
+  padding: 0 40px;
+}
+#host img {
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+  width: auto;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+@media all and (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .formCard {
+    display: flex;
+    flex-direction: column;
+  }
+  #aboutDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #aboutDiv img {
+    width: 24%;
+  }
+  #aboutDiv p {
+    width: 50%;
+    padding: 0 10px;
+  }
+  #ideasDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ideasCard {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin: 0 10px;
+  }
+  #host {
+    display: flex;
+    align-items: center;
+  }
+  .hostCard {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  form button {
+    width: 200px;
+  }
+}
+
+/* ----- Extra small screens ----- */
+@media all and (max-width: 390px) {
+  .logo {
+    font-size: 50px;
+  }
+
+  #stay {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 1000px) {
+  form div input,
+  form div select {
+    width: 100px;
+  }
+}
